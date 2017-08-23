@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS 'burgersDB';
+CREATE DATABASE 'burgersDB';
+
+USE 'burgersDB';
+
+CREATE TABLE 'burgers' (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  burger_name VARCHAR(50) NOT NULL,
+  devoured TINYINT(0),
+  date TIMESTAMP DEFAULT,
+  PRIMARY KEY (id)
+);
+
